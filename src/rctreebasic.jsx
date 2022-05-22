@@ -1,7 +1,7 @@
 /* eslint-disable no-alert, no-console, react/no-find-dom-node */
 import React from 'react';
 import "rc-tree/assets/index.css"
-import Tree, { TreeNode } from 'rc-tree';
+import Tree from 'rc-tree';
 
 const treeData = [
   {
@@ -78,23 +78,6 @@ class Demo extends React.Component {
   };
 
   render() {
-    const customLabel = (
-      <span className="cus-label">
-        <span>operations: </span>
-        <span style={{ color: 'blue' }} onClick={this.onEdit}>
-          Edit
-        </span>
-        &nbsp;
-        <label onClick={e => e.stopPropagation()}>
-          <input type="checkbox" /> checked
-        </label>
-        &nbsp;
-        <span style={{ color: '#EB0000' }} onClick={this.onDel}>
-          Delete
-        </span>
-      </span>
-    );
-
     return (
         <Tree
           className="myCls"
