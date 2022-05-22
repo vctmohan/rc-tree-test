@@ -1,5 +1,6 @@
 import React from 'react';
-import Component from './component'
+//import Component from './component'
+import Component from './rctreebasic'
 import './App.css';
 
 function App() {
