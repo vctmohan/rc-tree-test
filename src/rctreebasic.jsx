@@ -90,6 +90,7 @@ class Demo extends React.Component {
           defaultCheckedKeys={this.state.defaultCheckedKeys}
           onSelect={this.onSelect}
           onCheck={this.onCheck}
+          showIcon={false}
           treeData={treeData}
         />
     );
